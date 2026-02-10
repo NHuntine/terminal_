@@ -29,11 +29,6 @@ body {
 
   /* --font-text: "Monaco", Menlo, monospace; */
 
-  --bold-color: #e91e63;
-  --bold-weight: 700;
-
-  --italic-color: #d4bf00;
-
 	--radius-s: 0px;
 	--radius-m: 0px;
 	--radius-l: 0px;
@@ -47,21 +42,32 @@ body {
 
 .theme-dark {
     /* A deep greenish-blue/teal base */
-    --background-primary: #0d1717;      /* Main editor background */
-    --background-primary-alt: #0a1212;  /* Slightly darker for contrast */
+    --background-primary: #383c36;      /* Main editor background */
+    --background-primary-alt: #1d2021;  /* Slightly darker for contrast */
     
+	
     /* Sidebars and Modals */
-    --background-secondary: #132021;    /* File explorer and sidebars */
-    --background-secondary-alt: #0e1718;
+    --background-secondary: #282828;    /* File explorer and sidebars */
+    --background-secondary-alt: #282828;
     
     /* UI Elements */
     /* --background-modifier-border: #2a3f41; Borders between panes */
-	--background-modifier-border: #0d1717;
+	--background-modifier-border: #282828;
 	/* --divider-color: */
 
-	--text-normal:#b9b4a9;
-	--bold-color: #8eb07d;
-	--italic-color: #d69978;
+	--text-normal:#ebdbb2;
+	--bold-color: #b16286;
+	--italic-color: #fe8019; /* or #d69978 */
+
+	/* File names in the explorer */
+    --nav-item-color: #bdae93;       /* Matches your Mist Gray body text */
+    --nav-item-color-hover: #ebdbb2; /* Lightens when you hover */
+    --nav-item-color-active: #ebdbb2;/* Changes to your Moss Green when clicked */
+
+	/* Icons (Search, Settings, File Explorer toggle) */
+    --icon-color: #bdae93;           /* Soft Blue-Gray to keep it subtle */
+    --icon-color-hover: #ebdbb2;     /* Brightens on hover */
+    --icon-color-active: #ebdbb2;    /* Your Soft Orange when active/clicked */
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
